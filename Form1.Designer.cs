@@ -33,17 +33,17 @@
             this.инженерыйКалькуляторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonPlus = new System.Windows.Forms.Button();
+            this.buttonMinus = new System.Windows.Forms.Button();
+            this.buttonMultiplay = new System.Windows.Forms.Button();
+            this.buttonDivide = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.инженерыйКалькуляторToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(486, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(335, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,126 +70,44 @@
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LightBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.buttonDivide);
+            this.panel1.Controls.Add(this.buttonMultiplay);
+            this.panel1.Controls.Add(this.buttonMinus);
+            this.panel1.Controls.Add(this.buttonPlus);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(25, 48);
+            this.panel1.Location = new System.Drawing.Point(30, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(427, 414);
+            this.panel1.Size = new System.Drawing.Size(277, 352);
             this.panel1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 30);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(253, 34);
+            this.textBox2.Location = new System.Drawing.Point(48, 99);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 30);
+            this.textBox2.Size = new System.Drawing.Size(177, 30);
             this.textBox2.TabIndex = 2;
             // 
-            // textBox3
+            // textBox1
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(164, 34);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(94, 30);
-            this.textBox3.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(37, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 63);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Посчитать";
-            this.toolTip1.SetToolTip(this.button1, "Операции: + - * / ^");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(36, 244);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(351, 30);
-            this.textBox4.TabIndex = 6;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(144, 82);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 63);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Определить квадрат числа";
-            this.toolTip1.SetToolTip(this.button2, "Число будет умножено на самого себя");
-            this.button2.UseVisualStyleBackColor = true;
-           
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(264, 82);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 63);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Извлечь квадратный корень";
-            this.toolTip1.SetToolTip(this.button3, "Из числа будет извлечен квадратный корень");
-            this.button3.UseVisualStyleBackColor = true;
-                                
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(36, 162);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 63);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Расчет факториала";
-            this.toolTip1.SetToolTip(this.button4, "произведение всех натуральных чисел от 1 до n");
-            this.button4.UseVisualStyleBackColor = true;
-           
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(144, 162);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 63);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Расчет обратного значения";
-            this.toolTip1.SetToolTip(this.button5, "n^-1");
-            this.button5.UseVisualStyleBackColor = true;
-           
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(264, 162);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(123, 63);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Извлечь кубический корень";
-            this.toolTip1.SetToolTip(this.button6, "Извлечение кубического корня из числа");
-            this.button6.UseVisualStyleBackColor = true;
-            
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(48, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 30);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // toolTip1
             // 
@@ -197,12 +115,84 @@
             this.toolTip1.InitialDelay = 10;
             this.toolTip1.ReshowDelay = 100;
             // 
+            // buttonPlus
+            // 
+            this.buttonPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPlus.Location = new System.Drawing.Point(48, 149);
+            this.buttonPlus.Name = "buttonPlus";
+            this.buttonPlus.Size = new System.Drawing.Size(78, 34);
+            this.buttonPlus.TabIndex = 5;
+            this.buttonPlus.Text = "+";
+            this.buttonPlus.UseVisualStyleBackColor = true;
+            this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
+            // 
+            // buttonMinus
+            // 
+            this.buttonMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMinus.Location = new System.Drawing.Point(50, 189);
+            this.buttonMinus.Name = "buttonMinus";
+            this.buttonMinus.Size = new System.Drawing.Size(76, 34);
+            this.buttonMinus.TabIndex = 6;
+            this.buttonMinus.Text = "-";
+            this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
+            // 
+            // buttonMultiplay
+            // 
+            this.buttonMultiplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMultiplay.Location = new System.Drawing.Point(149, 149);
+            this.buttonMultiplay.Name = "buttonMultiplay";
+            this.buttonMultiplay.Size = new System.Drawing.Size(78, 34);
+            this.buttonMultiplay.TabIndex = 7;
+            this.buttonMultiplay.Text = "*";
+            this.buttonMultiplay.UseVisualStyleBackColor = true;
+            this.buttonMultiplay.Click += new System.EventHandler(this.buttonMultiplay_Click);
+            // 
+            // buttonDivide
+            // 
+            this.buttonDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDivide.Location = new System.Drawing.Point(151, 189);
+            this.buttonDivide.Name = "buttonDivide";
+            this.buttonDivide.Size = new System.Drawing.Size(76, 34);
+            this.buttonDivide.TabIndex = 8;
+            this.buttonDivide.Text = "/";
+            this.buttonDivide.UseVisualStyleBackColor = true;
+            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(48, 300);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(177, 30);
+            this.textBox3.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(98, 271);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 16);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Результат";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(51, 234);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Xª";
+            this.toolTip1.SetToolTip(this.button1, "Возведение в степень");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(486, 482);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(335, 433);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -230,15 +220,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button buttonMinus;
+        private System.Windows.Forms.Button buttonPlus;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button buttonDivide;
+        private System.Windows.Forms.Button buttonMultiplay;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 

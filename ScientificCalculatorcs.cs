@@ -11,7 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Calculator
 {
-    public partial class Scientific: Form
+    public partial class Scientific : Form
     {
         Form1 form1;
         double Answer
@@ -26,7 +26,7 @@ namespace Calculator
         }
 
 
-   
+
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -66,6 +66,23 @@ namespace Calculator
             {
                 Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), 10);
             }
+        }
+
+     
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            QuadraticEquation equation = new QuadraticEquation();
+
+            
+            if (equation.ShowDialog() == DialogResult.OK)
+            {
+                equation.ShowDialog();
+            }
+            
+
+
+
         }
     }
 }

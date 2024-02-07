@@ -7,7 +7,7 @@ namespace Calculator
     using System;
     using System.Windows.Forms;
     using System.Numerics;
-    
+
 
     public class CalcEngine : Form1
     {
@@ -97,7 +97,7 @@ namespace Calculator
                     numericAnswer = Math.Pow(firstNumber, secondNumber);
                     break;
 
-            
+
 
                 default:
 
@@ -112,27 +112,27 @@ namespace Calculator
             switch (calcOperation)
             {
                 case (int)Operator.eSquareRoot:
-                numericAnswer = Math.Sqrt(number);
+                    numericAnswer = Math.Sqrt(number);
                     break;
 
                 case (int)Operator.eSquareOfNumber:
-                    numericAnswer = number*number;
+                    numericAnswer = number * number;
                     break;
 
                 case (int)Operator.eFactorial:
                     var factorial = new BigInteger(1);
-                    for (int i = 1; i<=number; i++)
+                    for (int i = 1; i <= number; i++)
                     {
                         factorial *= i;
                     }
-                    return (double) factorial;
-                    
+                    return (double)factorial;
+
                 case (int)Operator.eReverse:
                     numericAnswer = Math.Pow(number, -1);
                     break;
 
                 case (int)Operator.eCubicRoot:
-                    numericAnswer = Math.Pow(number, 1.0/3.0);
+                    numericAnswer = Math.Pow(number, 1.0 / 3.0);
                     break;
             }
             return numericAnswer;

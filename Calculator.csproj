@@ -58,12 +58,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuadraticEquation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuadraticEquation.Designer.cs">
+      <DependentUpon>QuadraticEquation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScientificCalculatorcs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ScientificCalculatorcs.Designer.cs">
       <DependentUpon>ScientificCalculatorcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="TheRootOfTheQuadraticEquation.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +83,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuadraticEquation.resx">
+      <DependentUpon>QuadraticEquation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScientificCalculatorcs.resx">
       <DependentUpon>ScientificCalculatorcs.cs</DependentUpon>
     </EmbeddedResource>

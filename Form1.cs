@@ -15,8 +15,8 @@ namespace Calculator
         Scientific scientific;
         double Answer
         {
-            get { return Double.Parse(textBox4.Text); }
-            set { textBox4.Text = value.ToString(); }
+            get { return Double.Parse(textBox3.Text); }
+            set { textBox3.Text = value.ToString(); }
         }
         public Form1()
         {
@@ -39,49 +39,41 @@ namespace Calculator
         }
 
 
-
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-            if (textBox3.Text == "+")
-            {
-                Answer =  CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 1);
-            }
-            if (textBox3.Text == "-")
-            {
-                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 2);
-            }
-            if (textBox3.Text == "*")
-            {
-                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 3);
-            }
-            if (textBox3.Text == "/")
-            {
-                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 4);
-            }
-            if (textBox3.Text == "^")
-            {
-                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 5);
-            }
-            else
-            {
-                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 0);
-            }
-
-        }
-
       
 
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             scientific.Show();
 
+        }
+
+        private void buttonPlus_Click(object sender, EventArgs e)
+        {
+            Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 1);
+        }
+
+        private void buttonMinus_Click(object sender, EventArgs e)
+        {
+            Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 2);
+        }
+
+        private void buttonMultiplay_Click(object sender, EventArgs e)
+        {
+            Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 3);
+        }
+
+        private void buttonDivide_Click(object sender, EventArgs e)
+        {
+            Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 4);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (textBox1.Text != " ")
+            {
+                Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 5);
+            }
         }
     }
 }
