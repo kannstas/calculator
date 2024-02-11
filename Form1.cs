@@ -50,21 +50,29 @@ namespace Calculator
         private void buttonPlus_Click(object sender, EventArgs e)
         {
             Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 1);
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void buttonMinus_Click(object sender, EventArgs e)
         {
             Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 2);
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void buttonMultiplay_Click(object sender, EventArgs e)
         {
             Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 3);
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void buttonDivide_Click(object sender, EventArgs e)
         {
             Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 4);
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +81,8 @@ namespace Calculator
             if (textBox1.Text != " ")
             {
                 Answer = CalcEngine.Calculate(Double.Parse(textBox1.Text), Double.Parse(textBox2.Text), 5);
+                textBox1.Clear();
+                textBox2.Clear();
             }
         }
     }
